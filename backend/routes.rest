@@ -1,0 +1,33 @@
+POST http://localhost:5000/books/add
+Content-Type: application/json
+
+{
+    "name":"Jaseel",
+    "author":"Jaseel",
+    "description":"Jaseel",
+    "releaseDate":"2020-03-31"
+}
+
+###
+
+GET http://localhost:5000/books
+
+###
+
+GET http://localhost:5000/books/5f4c5b94354f251bafb5be83
+
+###
+
+POST http://localhost:5000/books/update/5f4c5c8cd8cd4e1d64db60b5
+Content-Type: application/json
+
+{
+    "name": "python",
+    "author": "Jaseem ck",
+    "description": "Introduction to Python Programming Language",
+    "releaseDate":"2020-06-12"
+}
+
+###
+
+DELETE http://localhost:5000/books/5f4c5c8cd8cd4e1d64db60b5
